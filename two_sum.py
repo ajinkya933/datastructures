@@ -6,10 +6,9 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 Bonus: Can you do this in one pass?
 '''
 
-
 '''
 we have to find all numbers in list that add upto k
-if we take the first number then
+if we take the first number then k=10+(10-k) is what we need
 '''
 
 
