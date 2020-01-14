@@ -45,3 +45,12 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 
 Bonus: Can you do this in one pass?
 ```
+
+Question 4:
+___
+```
+Given a string find consiquitively repeting characters in this string
+example input='ABBA'
+output = B
+```
+my explaination for solution https://www.youtube.com/watch?v=ws0VeSJUUns&t=23s
