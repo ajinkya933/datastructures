@@ -83,7 +83,7 @@ tree.root.left.left = Node(5)
 tree.root.left.right = Node(5)
 
 '''
-Step 3: count number of nodes which have no children
+Step 3: count unival tree
 '''
 data = tree.countUnivalSubtrees(tree.root)
 print(data)
