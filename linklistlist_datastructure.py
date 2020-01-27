@@ -34,8 +34,9 @@ class linklist:
         elems=[]
         current_node=self.head  # we initialize a node with a constructor self.head
         while current_node.next!=None:
+            elems.append(current_node.data)   # when you want to reverse a linklist then by default head is not NONE so you have to add this statement here
             current_node=current_node.next
-            elems.append(current_node.data)
+            #elems.append(current_node.data)
         print(elems)
 
     def getnode(self,index):
@@ -47,6 +48,17 @@ class linklist:
                 return current_node.data
             index_count+=1
 
+    def reverse_iterative(self):     #A -> B -> C
+        prev = None
+        current_node = self.head
+        while current_node:
+            next_node=current_node.next  # next_node = B
+            current_node.next = prev    #  B -> None
+            prev=current_node           # B->A
+            current_node = next_node
+        self.head = prev
+
+
 object1=linklist()
 object1.display()
 object1.append(1)
@@ -54,6 +66,10 @@ object1.append(2)
 object1.append(3)
 object1.append(4)
 object1.append(5)
-object1.display()
-got=object1.getnode(3)
-print(got)
+#object1.display()
+#got=object1.getnode(3)
+#print(got)
+
+object1.reverse_iterative()
+out = object1.display()
+print(out)
