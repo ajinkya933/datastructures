@@ -148,7 +148,7 @@ Implement an autocomplete system. That is, given a query string ```s``` and a se
 
 For example, given the query string ```de``` and the set of strings ```[dog, deer, deal]```, return ```[deer, deal]```.
 
-Important concepts brushing up:
+Important concepts learn up:
 ___
 list reversal in place algorithm.
 
@@ -157,3 +157,5 @@ complexities of set, list and dictionary while finding duplicate element from ar
 finding max element in a list.
 
 Implementation of sorting algorithms and their respective complexities.
+
+mean, median, mode, varience
