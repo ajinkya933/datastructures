@@ -151,6 +151,17 @@ For example, given the query string ```de``` and the set of strings ```[dog, dee
 Important concepts learn up:
 ___
 list reversal in place algorithm.
+```
+arr = [1, 2, 3, 4, 5, 6]
+n = len(arr)
+print(n)
+
+
+for i in range(0, int(n/2)):
+    arr[i], arr[n - i - 1] = arr[n-i - 1], arr[i]
+
+print(arr)
+```
 
 complexities of set, list and dictionary while finding duplicate element from array.
 
