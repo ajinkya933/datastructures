@@ -150,7 +150,10 @@ For example, given the query string ```de``` and the set of strings ```[dog, dee
 
 Important concepts brushing up:
 ___
-list reversal in place algorithm
-complexities of set, list and dictionary while finding duplicate element from array
-finding max element in a list
+list reversal in place algorithm.
+
+complexities of set, list and dictionary while finding duplicate element from array.
+
+finding max element in a list.
+
 Implementation of sorting algorithms and their respective complexities.
