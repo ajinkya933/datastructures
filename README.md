@@ -148,7 +148,7 @@ Implement an autocomplete system. That is, given a query string ```s``` and a se
 
 For example, given the query string ```de``` and the set of strings ```[dog, deer, deal]```, return ```[deer, deal]```.
 
-Important concepts learn up:
+Questions on concepts :
 ___
 list reversal in place algorithm.
 ```
