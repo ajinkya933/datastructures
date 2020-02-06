@@ -170,3 +170,30 @@ finding max element in a list.
 Implementation of sorting algorithms and their respective complexities.
 
 mean, median, mode, varience
+
+Question 13
+___
+Find Maximum repeting number in a list 
+input=[1,1,3,1,2,3]
+result=[1]
+explaination= return 1 as it repets 3 times which is the max count of 1 in this list
+```
+array=[1,1,3,1,2,3]
+dict={}
+for value in array:
+    if value not in dict:
+        dict[value]=1
+    else:
+        dict[value] += 1
+print(dict)
+
+num=dict.get(2)
+for k, v in dict.items():
+    if v > num:
+        num=v
+    print(num)
+    if v == num:
+        final= k
+print('key ==', final)
+```
+
