@@ -203,3 +203,30 @@ ___
 The power set of a set is the set of all its subsets. Write a function that, given a set, generates its power set.
 
 For example, given the set {1, 2, 3}, it should return {{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}
+```
+
+
+def get_powerset(some_list):
+    """Returns all subsets of size 0 - len(some_list) for some_list"""
+    if len(some_list) == 0:
+        return [[]]
+
+    subsets = []
+    first_element = some_list[0]
+    remaining_list = some_list[1:]
+    # Strategy: get all the subsets of remaining_list. For each
+    # of those subsets, a full subset list will contain both
+    # the original subset as well as a version of the subset
+    # that contains first_element
+    for partial_subset in get_powerset(remaining_list):
+
+        subsets.append(partial_subset)
+        subsets.append(partial_subset[:] + [first_element])
+
+    return subsets
+
+
+my_list = [1, 2, 3]
+res = get_powerset(my_list)
+print(res)
+```
